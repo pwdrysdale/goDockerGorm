@@ -1,0 +1,15 @@
+
+# # GET all users
+# curl -X GET http://localhost:8080/users
+
+# # GET create random user
+# curl -X GET http://localhost:8080/createrandomuser
+
+# # POST an actual user
+# curl -X POST -H "Content-Type: application/json" -d '{"name": "Pete"}' http://localhost:8080/createuser
+
+# # POST to edit user to change the user of id 10 to "some test"
+# curl -X POST -H "Content-Type: application/json" -d '{"id": 10, "name": "some test"}' http://localhost:8080/edituser
+
+# DELETE user with id 11 in the body of the request
+curl -X DELETE -H "Content-Type: application/json" -d '{"id": 11}' http://localhost:8080/deleteuser
